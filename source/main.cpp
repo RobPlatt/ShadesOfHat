@@ -8,11 +8,14 @@
 
 #include "Piece.h"
 #include "Board.h"
+#include "rng.h"
 
 #include <iostream>
 
 int main()
 {
+	boardRng().seedWithTime();
+
 	for ( unsigned i = 0; i < 100; i++ )
 	{
 		Piece piece1;
@@ -43,6 +46,4 @@ int main()
 
 	return 0;
 }
-
-
 

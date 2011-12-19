@@ -10,7 +10,7 @@
 
 Shade randomShade()
 {
-	unsigned n = getRandom(0, 2);
+	unsigned n = boardRng().getRandom(0, 2);
 
 	switch (n)
 	{

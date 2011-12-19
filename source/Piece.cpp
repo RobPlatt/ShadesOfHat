@@ -53,7 +53,7 @@ void Piece::merge(const Piece& source)
 void Piece::randomize()
 {
 	Shade shade = randomShade();
-	unsigned int n = getRandom(1, 11);
+	unsigned int n = boardRng().getRandom(1, 11);
 
 	shade_ = shade;
 	number_ = n;
